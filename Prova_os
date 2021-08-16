@@ -1,4 +1,4 @@
 import os
-os.system("touch provacrebivb.txt")
-os.system("echo ciao >provacrebivb.txt")
+os.system("say Funziona!!")
+os.system("osascript -e 'tell application (path to frontmost application as text) to display dialog "Funziona" buttons {"OK"} with icon stop'")
 
