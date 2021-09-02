@@ -1,0 +1,27 @@
+import telegram_send
+import time
+import random
+
+
+
+fejfu = ['1092','2037','7487','6985',
+         '5848','8958','6956','4934',
+         '4326','3678','2396','2133',
+         '3934','4648','4274','3424',]
+
+
+messaggio = random.choice(fejfu)
+
+
+
+telegram_send.send(messages=[messaggio])
+time.sleep(2)
+
+a = input("Cosa ti è rrivato sul telefono? ")
+if (a== messaggio):
+    print("ok il programma va avanti")
+
+else:
+    print("il programma non va avanti")
+    telegram_send.send(messages=["qualcuno ha provato il tuo programmino"])
+#telegram_send.send(messages=["Wow that was easy!"])
